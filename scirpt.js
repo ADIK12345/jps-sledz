@@ -81,13 +81,15 @@ dropdownMenuBtn.addEventListener("click", (e) => {
 
 overlay.addEventListener("click", toggleSidebar);
 const imageButton = document.querySelector('img[role="button"]');
+if (imageButton) {
+  imageButton.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault(); // zapobiega scrollowaniu przy spacji
+      imageButton.click();
+    }
+  });
+}
 
-imageButton.addEventListener("keydown", (e) => {
-  if (e.key === "Enter" || e.key === " ") {
-    e.preventDefault(); // zapobiega scrollowaniu przy spacji
-    imageButton.click();
-  }
-});
 document.addEventListener("click", (e) => {
   // zamykanie sidebaru kliknięciem poza
   if (

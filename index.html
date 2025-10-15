@@ -105,7 +105,7 @@
             Profesjonalne usługi transportowe na najwyższym poziomie
           </p>
         </header>
-        <button class="enter-button">sprawdz</button>
+        <a href="#services" class="enter-button"> sprawdz</a>
       </div>
     </section>
     <aside id="sidebar" class="sidebar" inert="" aria-hidden="true">
@@ -131,7 +131,7 @@
               aria-label="Otwórz rozwijane menu inne usługi"
             >
               <button class="none-style-button">
-                Inee Usługi
+                Inne Usługi
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -196,41 +196,53 @@
       </section>
 
       <section class="services" id="services">
-        <h2 class="services-title with-divider">Nasza oferta</h2>
-
+        <header>
+          <h2 class="services-title with-divider">Nasza oferta</h2>
+        </header>
         <div class="services-content">
-          <div class="card">
-            <img src="truck3.jpg" alt="service 1" />
+          <a href="transport.html" class="card">
+            <img
+              src="truck3.jpg"
+              alt="Zdjęcie przedstawiające transport lądowy"
+            />
             <h3>Transport Lądowy</h3>
-          </div>
-          <div class="card">
-            <img src="truck6.jpg" alt="service 2" />
+          </a>
+
+          <a href="magazynowanie.html" class="card">
+            <img src="truck6.jpg" alt="Zdjęcie przedstawiające magazynowanie" />
             <h3>Magazynowanie</h3>
-          </div>
-          <div class="card">
-            <img src="truck4.jpg" alt="service 3" />
+          </a>
+
+          <a href="wypozyczania.html" class="card">
+            <img
+              src="truck4.jpg"
+              alt="Zdjęcie przedstawiające wypożyczenie lawety"
+            />
             <h3>Wypożyczenie Lawety</h3>
-          </div>
-          <div class="card">
-            <img src="truck7.jpg" alt="service 4" />
+          </a>
+
+          <a href="naprawy.html" class="card">
+            <img src="truck7.jpg" alt="Zdjęcie przedstawiające naprawy" />
             <h3>Naprawy</h3>
-          </div>
+          </a>
         </div>
       </section>
 
       <section class="why-us" id="transport">
         <header class="why-us-header">
-          <h2 class="with-divider">Dlaczego my?</h2>
+          <h2 class="with-big-blue-divider">Dlaczego my?</h2>
         </header>
         <div class="why-us-content">
           <ul class="why-us-list">
-            <li>Doświadczenie</li>
-            <li>Profesjonalizm</li>
-            <li>Terminowość</li>
-            <li>Nowoczesna flota pojazdów</li>
-            <li>Indywidualne podejście do klienta</li>
+            <li><h3>Doświadczenie</h3></li>
+            <li><h3>Profesjonalizm</h3></li>
+            <li><h3>Terminowość</h3></li>
+            <li><h3>Nowoczesna flota pojazdów</h3></li>
+            <li><h3>Indywidualne podejście do klienta</h3></li>
           </ul>
-          <img src="truck5.jpg" alt="why us" class="why-us-image" />
+          <div class="why-us-image-container">
+            <img src="truck5.jpg" alt="why us" class="why-us-image" />
+          </div>
         </div>
       </section>
     </main>
