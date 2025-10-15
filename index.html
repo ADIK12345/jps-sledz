@@ -1,12 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jps-Sledz -firma transportowa</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="mainStyle.css" />
+    <link rel="stylesheet" href="mainPagestyle.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Jps-Sledz - firma transportowa</title>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <script></script>
+    <header class="header">
+      <a href="/jps-sledz">
+        <img class="logo" src="logo2.png" alt="Jps-Sledz Logo"
+      /></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="onas.html">O nas</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li class="services-li" id="mainDropdown-menu-li">
+            <button
+              class="menu-link"
+              id="menu-link"
+              aria-controls="dropdown-menu"
+              aria-label="Otwórz rozwijane menu inne usługi"
+            >
+              Inne usługi
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="arrow-down"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
+            <div
+              class="dropdown-menu"
+              id="dropdown-menu"
+              inert=""
+              aria-hidden="true"
+            >
+              <ul role="menu">
+                <li role="menuitem">
+                  <a href="magazynowanie.html">Magazynowanie</a>
+                </li>
+                <li role="menuitem"><a href="naprawy.html">Naprawy</a></li>
+                <li role="menuitem">
+                  <a href="wypozyczania.html">Wypożyczenia</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+          <li id="side-barMenu" class="side-barMenu">
+            <button class="none-style-button">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <img
+        src="Airbrush-OBJECT-REMOVER-1759241323355.jpg"
+        alt="truck"
+        class="hero-image"
+      />
+      <div class="hero-text">
+        <header>
+          <h1 class="hero-title">Witamy w Jps Sledź</h1>
+          <p class="hero-description">
+            Profesjonalne usługi transportowe na najwyższym poziomie
+          </p>
+        </header>
+        <button class="enter-button">sprawdz</button>
+      </div>
+    </section>
+    <aside id="sidebar" class="sidebar" inert="" aria-hidden="true">
+      <div class="sidebar-wraper">
+        <img src="logo2.png" alt="logo" class="logo" />
+        <button
+          class="exit-btn"
+          id="exit-btn"
+          aria-controls="sidebar"
+          aria-expanded="true"
+          aria-label="Zamknij menu boczne"
+        >
+          &times;
+        </button>
+        <nav>
+          <ul>
+            <li><a href="onas.html">O nas</a></li>
+            <li><a href="transport.html">transport</a></li>
+            <li
+              id="dropdown-menu-btn"
+              aria-expanded="false"
+              aria-controls="submenu"
+              aria-label="Otwórz rozwijane menu inne usługi"
+            >
+              <button class="none-style-button">
+                Inee Usługi
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="arrow-down"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </button>
+              <ul
+                role="menu"
+                class="submenu"
+                id="submenu"
+                aria-hidden="true"
+                inert=""
+              >
+                <li role="menuitem">
+                  <a href="wypozyczania.html">Wypożyczenia</a>
+                </li>
+                <li role="menuitem">
+                  <a href="magazynowanie.html">Magazynowanie</a>
+                </li>
+                <li role="menuitem"><a href="naprawy.html">Naprawy</a></li>
+              </ul>
+            </li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+    <main>
+      <section class="about-us" id="about">
+        <h2 class="about-us-title with-divider">O nas</h2>
+
+        <div class="about-us-content">
+          <p class="about-us-text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum
+            sapiente alias autem repellendus rem voluptates dicta ad eos
+            accusantium, itaque voluptatibus laborum, repellat aperiam? Incidunt
+            asperiores labore a, animi fuga architecto blanditiis accusantium,
+            ullam eveniet rerum, nulla velit aliquam nihil nemo voluptatem.
+            Repellat deleniti sunt nobis! Deserunt ipsum obcaecati nisi libero
+            ullam consequuntur nemo iure? Accusamus blanditiis animi, veritatis,
+            cupiditate minima exercitationem earum amet consectetur asperiores
+            molestias quos? Ipsa tenetur voluptates facere earum modi minus vel
+            ratione soluta? Cum omnis voluptates magnam minus vero quas ipsam
+            delectus! Libero quidem laboriosam accusantium quasi quae? Inventore
+            quas numquam laboriosam, in totam doloribus?Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Nostrum, amet expedita vitae qui
+            itaque ducimus, fuga tempora iure nam possimus esse praesentium vero
+            minima velit optio error earum nobis alias.
+          </p>
+          <img src="truck2.jpg" alt="about us" class="about-us-image" />
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <h2 class="services-title with-divider">Nasza oferta</h2>
+
+        <div class="services-content">
+          <div class="card">
+            <img src="truck3.jpg" alt="service 1" />
+            <h3>Transport Lądowy</h3>
+          </div>
+          <div class="card">
+            <img src="truck6.jpg" alt="service 2" />
+            <h3>Magazynowanie</h3>
+          </div>
+          <div class="card">
+            <img src="truck4.jpg" alt="service 3" />
+            <h3>Wypożyczenie Lawety</h3>
+          </div>
+          <div class="card">
+            <img src="truck7.jpg" alt="service 4" />
+            <h3>Naprawy</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="why-us" id="transport">
+        <header class="why-us-header">
+          <h2 class="with-divider">Dlaczego my?</h2>
+        </header>
+        <div class="why-us-content">
+          <ul class="why-us-list">
+            <li>Doświadczenie</li>
+            <li>Profesjonalizm</li>
+            <li>Terminowość</li>
+            <li>Nowoczesna flota pojazdów</li>
+            <li>Indywidualne podejście do klienta</li>
+          </ul>
+          <img src="truck5.jpg" alt="why us" class="why-us-image" />
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer-content">
+        <div class="footer-contact">
+          <h2>Kontakt</h2>
+          <p>Email: kontakt@jps-sledz.pl</p>
+          <p>Numer Telefonu: XXXXX</p>
+        </div>
+        <div class="footer-company-data">
+          <h2>Dane Społki</h2>
+          <p>nawza: JPS ŚLEDŹ sp.z.o.o</p>
+          <p>Adres siedziby: Szkolna 2B, Dębsko, 64-050 Wielichowo, Polska</p>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <p>© 2025 Jps Śledź. Wszelkie prawa zastrzeżone.</p>
+        <a href="polityka-prywatnosci.html">Polityka Prywatnosci</a>
+      </div>
+    </footer>
+
+    <script src="scirpt.js"></script>
   </body>
 </html>

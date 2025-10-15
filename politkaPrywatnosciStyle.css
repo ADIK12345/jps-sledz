@@ -1,0 +1,14 @@
+.politics-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: var(--font-size-400);
+}
+.politics-section h1 {
+  font-size: var(--font-size-xl);
+}
+.politics-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

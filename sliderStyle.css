@@ -1,0 +1,17 @@
+.swiper {
+  width: 100%;
+  height: auto;
+  --swiper-pagination-color: #e74c3c;
+}
+.swiper-slide > img {
+  border: 2px solid rgb(48, 47, 47);
+
+  border-radius: 16px;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide {
+  cursor: pointer;
+}

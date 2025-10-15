@@ -1,0 +1,40 @@
+.repairs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.images-section .swiper {
+  width: 80%;
+  padding: 20px 0;
+}
+
+.images-section .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 8px 8px 24px -12px rgba(66, 68, 90, 1);
+  padding: 20px;
+}
+
+.images-section .swiper-slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.images-section .swiper-slide h3 {
+  font-size: 2rem;
+  margin: 20px 0 10px;
+}
+
+.images-section .swiper-slide p {
+  font-size: 1.4rem;
+  text-align: justify;
+  color: #000;
+}

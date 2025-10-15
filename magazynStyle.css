@@ -1,0 +1,35 @@
+.warehouse > ul {
+  list-style: none;
+  display: grid;
+  width: 100%;
+  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: 20px;
+}
+.text-content {
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+  font-size: var(--font-size-h3);
+  text-align: center;
+  border-radius: 16px;
+  color: white;
+  height: fit-content;
+}
+.warehouse > ul > li {
+  min-height: 300px;
+  display: grid;
+  place-items: end;
+  overflow: hidden;
+}
+.warehouse > ul > li img {
+  border-radius: 16px;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
